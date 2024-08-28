@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 import os
-import predict
+from pythonScripts import predict
 from flask_cors import CORS
 
 app = Flask(__name__)
