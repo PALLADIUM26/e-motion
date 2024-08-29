@@ -1,0 +1,7 @@
+Flask-Cors
+Flask
+opencv-python
+requests
+jsonify
+keras
+keras-models
