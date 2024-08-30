@@ -5,3 +5,4 @@ requests
 jsonify
 keras
 keras-models
+tensorflow
