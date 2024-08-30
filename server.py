@@ -34,7 +34,7 @@ def upload_file():
     print(file_path)
     file.save(file_path)
     res = predict.giveResult(file_path)
-    print(type(res))
+    # print(type(res))
     print(res)
     return res, 200, {'Content-Type': 'text/plain'}
     # return str(res), 200, {'Content-Type': 'text/plain'}
