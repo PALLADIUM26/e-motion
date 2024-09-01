@@ -14,7 +14,7 @@ async function uploadFile() {
 
     try{
         console.log('lol');
-        const response = await fetch('http://localhost:5000/upload', {
+        const response = await fetch('https://fluffy-acorn-xjwv4q4v94pfpx4p-5000.app.github.dev/', {
             method: 'POST',
             body: formData,
         });

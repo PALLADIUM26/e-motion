@@ -16,7 +16,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 print("hello from back")
 
-@app.route('/upload', methods=['POST'])
+@app.route('/', methods=['POST'])
 def upload_file():
     if 'file' not in request.files:
         return 'No file part', 400
@@ -34,7 +34,7 @@ def upload_file():
     print(file_path)
     file.save(file_path)
     res = predict.giveResult(file_path)
-    print(type(res))
+    # print(type(res))
     print(res)
     return res, 200, {'Content-Type': 'text/plain'}
     # return str(res), 200, {'Content-Type': 'text/plain'}
@@ -42,5 +42,7 @@ def upload_file():
     # Process the file (Example: Just returning the filename for now)
     # return jsonify({'message': f'File {file.filename} uploaded successfully!'}), 200
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
