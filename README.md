@@ -23,19 +23,18 @@ e-motion is a project designed to analyze emotions from facial features (image d
 ```plaintext
 e-motion/
 │
+├── .devcontainer
+├── .github
 ├── pythonScripts/     # User-defined python package
 │   ├── __init__.py
 │   ├── clickPhoto2.py # Script to click photo and save
 │   ├── preProcess.py  # Script to pre-process data (image file)
 │   └── predict.py     # Script to analyze data using pre-trained model
-├── static/            # Static JavaScript files
-│   └── app.js
-├── styles/            # CSS files
-│   └── main.css
-├── templates/         # HTML templates
-│   └── index.html
 ├── .gitignore
 ├── README.md
+├── app.js             # Static JavaScript file
+├── index.html         # HTML template
+├── main.css           # CSS file
 ├── model2.h5          # Pre-trained model files
 ├── requirements.txt   # Python dependencies
 └── server.py          # Main server script
